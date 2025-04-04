@@ -104,7 +104,7 @@ FaceID is a cutting-edge web application for face recognition and visitor manage
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/faceid.git
+git clone https://github.com/Yashparmar1125/FaceID.git
 
 # Navigate to backend directory
 cd backend
@@ -181,5 +181,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <div align="center">
-Made with ❤️ by FaceID Team
+Made with ❤️ by Yash Parmar
 </div> 
