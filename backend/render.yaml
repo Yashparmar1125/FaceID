@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: face-recognition-app
+    env: python
+    buildCommand: |
+      apt-get update && apt-get install -y \
+        cmake \
+        build-essential \
+        libboost-all-dev \
+        python3-dev \
+        && rm -rf /var/lib/apt/lists/*
+      pip install --upgrade pip
+      pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///facial_recognition.db
+    plan: free
+    autoDeploy: true
+    instanceType: starter
+    healthCheckPath: /
